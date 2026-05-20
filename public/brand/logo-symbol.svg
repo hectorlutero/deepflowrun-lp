@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Deep Run symbol">
+  
+  <rect width="64" height="64" rx="14" fill="#0B1F3A"></rect>
+  
+  <path d="M18 12 H32 C44.15 12 52 20.95 52 32 C52 43.05 44.15 52 32 52 H18 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linejoin="round"></path>
+  
+  <path d="M22 18 C 38 18, 46 24, 46 32 C 46 40, 38 46, 22 46" fill="none" stroke="#22D3EE" stroke-width="4.5" stroke-linecap="round"></path>
+  
+  <circle cx="46" cy="32" r="3" fill="#10B981"></circle>
+</svg>
