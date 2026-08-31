@@ -1,4 +1,5 @@
 import { LogoMark, Wordmark } from "./logo-mark";
+import { whatsAppUrl, WHATSAPP_MSG_DIAGNOSTICO } from "@/lib/contact";
 
 export function Footer() {
   return (
@@ -35,13 +36,13 @@ export function Footer() {
             <div className="col-title">Contato</div>
             <ul>
               <li>
-                <a href="mailto:contato@deepflowrun.com.br">
-                  contato@deepflowrun.com.br
+                <a href="mailto:contato@deepflowrun.com">
+                  contato@deepflowrun.com
                 </a>
               </li>
               <li>
                 <a
-                  href="https://wa.me/"
+                  href={whatsAppUrl(WHATSAPP_MSG_DIAGNOSTICO)}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

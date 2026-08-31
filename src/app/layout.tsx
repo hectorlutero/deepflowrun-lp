@@ -19,13 +19,16 @@ export const metadata: Metadata = {
   title: "DeepFlowRun — Operação fluida. Diagnóstico profundo.",
   description:
     "Consultoria de IA aplicada. Entramos na sua operação, mapeamos onde o dinheiro está escapando e implementamos IA onde o número realmente muda.",
-  metadataBase: new URL("https://deepflowrun.com.br"),
+  metadataBase: new URL("https://deepflowrun.com"),
+  alternates: { canonical: "/" },
   openGraph: {
     title: "DeepFlowRun — Operação fluida. Diagnóstico profundo.",
     description:
       "Consultoria de IA aplicada para empresas B2B. Diagnóstico + implementação stack-agnostic.",
+    url: "https://deepflowrun.com",
     locale: "pt_BR",
     type: "website",
+    siteName: "DeepFlowRun",
   },
 };
 

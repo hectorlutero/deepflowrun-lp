@@ -1,5 +1,6 @@
 import { AnimatedLogo } from "./animated-logo";
 import { ArrowRight, WhatsApp } from "./icons";
+import { whatsAppUrl, WHATSAPP_MSG_DIAGNOSTICO } from "@/lib/contact";
 
 const trust = [
   { value: "14", suffix: "d", label: "Do diagnóstico ao ar" },
@@ -54,7 +55,7 @@ export function Hero() {
             </a>
             <a
               className="btn btn-ghost-dark"
-              href="https://wa.me/"
+              href={whatsAppUrl(WHATSAPP_MSG_DIAGNOSTICO)}
               target="_blank"
               rel="noopener noreferrer"
             >

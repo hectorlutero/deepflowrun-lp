@@ -1,3 +1,4 @@
+import { BiAgentTeaser } from "@/components/lp/bi-agent-teaser";
 import { Audience } from "@/components/lp/audience";
 import { ClosingCta } from "@/components/lp/closing-cta";
 import { Differentiators } from "@/components/lp/differentiators";
@@ -23,6 +24,7 @@ export default function Home() {
         <Audience />
         <SocialProof />
         <Differentiators />
+        <BiAgentTeaser />
         <Faq />
         <ClosingCta />
       </main>

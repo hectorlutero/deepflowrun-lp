@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle, WhatsApp } from "./icons";
+import { GOOGLE_BOOKING_URL, whatsAppUrl, WHATSAPP_MSG_DIAGNOSTICO } from "@/lib/contact";
 
 export function ClosingCta() {
   return (
@@ -73,13 +74,13 @@ export function ClosingCta() {
             juntos.
           </p>
           <div className="closing-cta">
-            <a className="btn btn-primary" href="#">
+            <a className="btn btn-primary" href={GOOGLE_BOOKING_URL} target="_blank" rel="noopener noreferrer">
               Quero meu diagnóstico
               <ArrowRight className="ico" />
             </a>
             <a
               className="btn btn-ghost-dark"
-              href="https://wa.me/"
+              href={whatsAppUrl(WHATSAPP_MSG_DIAGNOSTICO)}
               target="_blank"
               rel="noopener noreferrer"
             >

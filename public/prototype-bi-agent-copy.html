@@ -1,0 +1,354 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>BI Agent LP — Copy v3</title><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Manrope:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/><style>9..144,700;9..144,800&family=Manrope:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap");
+
+.copy-review {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px 120px;
+  font-family: Manrope, system-ui, sans-serif;
+  color: #0b1f3a;
+  line-height: 1.6;
+  background: #faf8f4;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  .copy-review {
+    background: #050d1c;
+    color: #e2e8f0;
+  }
+  .copy-pull {
+    background: #0f172a !important;
+    border-left-color: #eba803 !important;
+  }
+  .copy-vs-bad,
+  .copy-vs-good {
+    border-color: rgba(255, 255, 255, 0.12) !important;
+  }
+  .copy-demo {
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
+}
+
+.copy-review-meta {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(11, 31, 58, 0.12);
+}
+
+.copy-tag {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b5591c;
+  margin: 0 0 8px;
+}
+
+.copy-note {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.65;
+}
+
+.copy-review h1 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 0 0 28px;
+}
+
+.copy-review h1 em {
+  font-style: italic;
+}
+
+.copy-pull {
+  margin: 0 0 24px;
+  padding: 20px 24px;
+  background: #0b1f3a;
+  color: #fff;
+  font-family: Fraunces, serif;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  border-left: 5px solid #eba803;
+}
+
+.copy-pull strong {
+  color: #eba803;
+}
+
+.copy-lede {
+  font-size: 1.05rem;
+  margin: 0 0 16px;
+}
+
+.copy-fomo {
+  font-weight: 700;
+  color: #b5591c;
+  margin: 0 0 12px;
+}
+
+.copy-micro {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.7;
+  margin: 0 0 24px;
+}
+
+.copy-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.copy-ctas a {
+  font-size: 13px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.copy-review section {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(11, 31, 58, 0.1);
+}
+
+.copy-review h2 {
+  font-family: Fraunces, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.copy-sub {
+  opacity: 0.7;
+  margin: 0 0 16px;
+  font-size: 14px;
+}
+
+.copy-cards {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.copy-cards li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(11, 31, 58, 0.08);
+}
+
+.copy-aside {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-top: 16px;
+}
+
+.copy-section-id {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #22d3ee;
+  margin: 0 0 8px;
+}
+
+.copy-visual {
+  font-size: 12px;
+  font-style: italic;
+  opacity: 0.55;
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  background: rgba(34, 211, 238, 0.08);
+  border-radius: 6px;
+  border-left: 3px solid #22d3ee;
+}
+
+.copy-connectors {
+  font-size: 13px;
+  opacity: 0.75;
+  margin: 12px 0 16px;
+}
+
+.copy-scene {
+  margin: 20px 0;
+  padding: 16px;
+  background: rgba(11, 31, 58, 0.04);
+  border-radius: 8px;
+  border: 1px solid rgba(11, 31, 58, 0.08);
+}
+
+.copy-scene h3 {
+  font-family: Fraunces, serif;
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.copy-scene p {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.copy-scene-stakes {
+  font-weight: 600;
+  color: #b5591c;
+}
+
+.copy-scene code {
+  font-family: "JetBrains Mono", monospace;
+  color: #0d9488;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .copy-scene {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .copy-visual {
+    background: rgba(34, 211, 238, 0.1);
+  }
+}
+
+.copy-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.copy-steps li {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(11, 31, 58, 0.08);
+}
+
+.copy-steps span {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.2;
+}
+
+.copy-vs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+@media (max-width: 520px) {
+  .copy-vs {
+    grid-template-columns: 1fr;
+  }
+}
+
+.copy-vs-bad,
+.copy-vs-good {
+  padding: 20px;
+  border: 1px solid rgba(11, 31, 58, 0.12);
+  border-radius: 8px;
+}
+
+.copy-vs-bad strong {
+  display: block;
+  font-size: 2rem;
+  font-family: "JetBrains Mono", monospace;
+  color: #ef4444;
+  text-decoration: line-through;
+}
+
+.copy-vs-good strong {
+  display: block;
+  font-size: 2rem;
+  font-family: "JetBrains Mono", monospace;
+  color: #10b981;
+}
+
+.copy-vs span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.copy-vs small {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.copy-negative {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.copy-ticker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+.copy-demo p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  padding: 12px;
+  background: rgba(11, 31, 58, 0.04);
+  border-radius: 6px;
+}
+
+.copy-demo code {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+  color: #0d9488;
+}
+
+.copy-faq dt {
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.copy-faq dd {
+  margin: 4px 0 0;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.copy-closing h2 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+
+.copy-footer {
+  margin-top: 64px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.copy-footer code {
+  font-size: 11px;
+}
+</style></head><body>
+<article class="copy-review">
+<header class="copy-review-meta"><p class="copy-tag">BI Agent / copy v3 · standalone</p><p class="copy-note">Abra este arquivo direto no browser — não precisa de Next.js</p></header>
+<section><p class="copy-section-id">01 · Hero</p><p class="copy-visual">Visual: split + mock WhatsApp · Ver demo no mock · 2 CTAs na coluna</p><h1>Coloque o seu BI no WhatsApp.<br/><em>Decida antes de abrirem o report.</em></h1><blockquote class="copy-pull">Errou no filtro do BI e apresentou número errado para a diretoria.</blockquote><p class="copy-lede">Pergunte em linguagem natural no WhatsApp. A resposta traz o <strong>mesmo número da sua base analítica</strong>, sem o risco de recorte errado por engano.</p><p class="copy-connectors">Conectamos com Power BI, Fabric, Qlik, Looker, Tableau, Excel, DW, BigQuery e outras fontes.</p></section>
+<section><p class="copy-section-id">02 · Praticidade</p><h2>Onde a decisão acontece</h2><p class="copy-sub">Velocidade com número que fecha. Sem abrir o desktop.</p><ul class="copy-cards"><li><strong>No avião</strong> — Número validado no bolso, sem laptop.</li><li><strong>Na reunião</strong> — Pergunta na mesa, resposta em segundos.</li><li><strong>Antes deles</strong> — Quem exporta planilha decide depois.</li></ul><p>Nós colocamos a decisão no ritmo do negócio — não no ritmo do export.</p></section>
+<section><p class="copy-section-id">03 · Problema</p><h2>Seu BI não deveria depender de quem está na frente do PC</h2><ol><li>Toda pergunta vira export, planilha paralela ou “deixa eu abrir o report”.</li><li>O número chega tarde ou errado: card genérico, recorte trocado, meta que não bate com a linha certa.</li><li>A diretoria decide no WhatsApp e no corredor. O BI ficou no desktop.</li></ol></section>
+<section><p class="copy-section-id">04 · Como funciona</p><h2>Três passos</h2><ol class="copy-steps"><li><span>01</span><div><strong>Pergunta</strong> — Você pergunta em linguagem natural no canal que a equipe já usa.</div></li><li><span>02</span><div><strong>Recorte</strong> — Nós devolvemos período, unidade e linha declarados na resposta.</div></li><li><span>03</span><div><strong>Prova</strong> — Cruzamos o valor com a fonte analítica antes de ir ao ar.</div></li></ol></section>
+<section id="confianca"><p class="copy-section-id">05 · Confiabilidade</p><h2>Um erro pequeno na conversa. Um estrago grande na decisão.</h2><div class="copy-scene"><h3>Controladoria</h3><p><strong>Alguém disse:</strong> “Realizado margem Rio abril: R$ 470 mil.”</p><p><strong>Agente interpreta:</strong> YTD entrou como abril isolado.</p><p><strong>Valor certo:</strong> <code>R$ 352 mil</code></p><p class="copy-scene-stakes">~R$ 118 mil numa linha → milhões na projeção de grupo.</p></div><div class="copy-scene"><h3>Comercial</h3><p><strong>Alguém disse:</strong> “Batemos 112% da meta.”</p><p><strong>Agente interpreta:</strong> Meta jan + realizado mar.</p><p><strong>Valor certo:</strong> <code>94%</code></p></div><div class="copy-scene"><h3>RH</h3><p><strong>Alguém disse:</strong> “Headcount estável.”</p><p><strong>Agente interpreta:</strong> Desligados ainda no fato.</p><p><strong>Valor certo:</strong> <code>−847</code> vs mês anterior</p></div></section>
+<section><p class="copy-section-id">06 · Plataformas</p><p class="copy-visual">Visual: logo wall monocromático</p><h2>Conectamos com o stack que você já tem</h2><p>Power BI não é requisito — é um dos conectores. Nós implementamos em cima da fonte analítica que sua empresa já usa: semantic model, DW, lakehouse ou planilha governada.</p></section>
+<section><p class="copy-section-id">07 · Canais</p><h2>Um agente. O canal que a equipe já usa.</h2><p>WhatsApp (principal), Telegram, SMS, E-mail — mesmo motor.</p></section>
+<section><p class="copy-section-id">08 · Departamentos & segmentos</p><h2>Um agente por área</h2><p class="copy-ticker"><strong>Departamentos:</strong> Comercial, Controladoria, Finanças, Fiscal, RH, TI, Jurídico, Operações, Supply chain, Marketing, Perdas, Projetos, Atendimento</p><h3>Segmentos</h3><p class="copy-ticker">Indústria, Varejo, Atacado, Saúde, Serviços financeiros, Agronegócio, Energia, Logística, Educação, Telecom, Construção, Tech B2B</p></section>
+<section id="demo"><p class="copy-section-id">09 · Demo</p><h2>Veja a conversa no seu canal</h2><p>Carrossel WhatsApp, Telegram, SMS, E-mail — alinhado às cenas da seção 05.</p></section>
+<section><p class="copy-section-id">10 · Parceiros</p><h2>Implementa BI para clientes?</h2><p>Nós entregamos whitelabel, multi-cliente e onboarding com prova numérica.</p></section>
+<section><p class="copy-section-id">11 · FAQ</p><dl class="copy-faq"><dt>Só funciona com Power BI?</dt><dd>Não. Power BI, Fabric, Qlik, Looker, Tableau, Excel, DW, BigQuery e outras.</dd><dt>Como sabemos que o número está certo?</dt><dd>Âncoras na fonte + golden tests antes do go-live.</dd></dl></section>
+<section class="copy-closing"><p class="copy-tag">Próximo passo</p><h2>Veja o recorte certo<br/>antes da reunião.</h2></section>
+<footer class="copy-footer"><p>Arquivo: web/public/prototype-bi-agent-copy.html</p></footer>
+</article></body></html>
