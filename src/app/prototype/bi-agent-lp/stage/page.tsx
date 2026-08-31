@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { StagePrototype } from "@/components/prototype/bi-agent-lp/stage";
 
 export const metadata: Metadata = {
-  title: "PROTOTYPE — BI Agent palco",
+  title: "Lab — BI Agent stage",
   robots: { index: false, follow: false },
 };
 
-export default function StagePage() {
-  return <StagePrototype />;
+export default function StageLabPage() {
+  return <StagePrototype lab />;
 }

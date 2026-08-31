@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { BiAgentLanding } from "@/components/bi-agent/landing";
 import { META } from "@/components/bi-agent/copy";
-import "@/components/bi-agent/bi-agent.css";
+import { StagePrototype } from "@/components/prototype/bi-agent-lp/stage";
 
 export const metadata: Metadata = {
   title: META.title,
@@ -18,9 +17,5 @@ export const metadata: Metadata = {
 };
 
 export default function BiAgentPage() {
-  return (
-    <div className="bi-agent">
-      <BiAgentLanding />
-    </div>
-  );
+  return <StagePrototype />;
 }

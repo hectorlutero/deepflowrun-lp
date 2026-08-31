@@ -94,27 +94,32 @@ const SEG_ICONS = {
   "Tech B2B": CommandLineIcon,
 } as const;
 
-export function StagePrototype() {
+export function StagePrototype({ lab = false }: { lab?: boolean }) {
   const ticker = CONNECTORS;
+  const homeHref = lab ? "/prototype/bi-agent-lp/stage" : "/bi-agent";
 
   return (
     <div className="stg">
       <div className="stg-mesh" aria-hidden />
       <div className="stg-grain" aria-hidden />
 
-      <div className="stg-proto-bar">
-        <span>Protótipo visual · situações (Produto DS) — não é a LP de produção</span>
-        <span>
-          <Link href="/bi-agent">LP atual</Link>
-          {" · "}
-          <Link href="/prototype/bi-agent-lp/stage/situacoes-lab">Lab situações</Link>
-          {" · "}
-          <Link href="/prototype/bi-agent-lp/palettes">Paletas</Link>
-        </span>
-      </div>
+      {lab ? (
+        <div className="stg-proto-bar">
+          <span>Lab visual · espelho do stage — LP de produção em /bi-agent</span>
+          <span>
+            <Link href="/bi-agent">LP produção</Link>
+            {" · "}
+            <Link href="/bi-agent/legado">LP anterior</Link>
+            {" · "}
+            <Link href="/prototype/bi-agent-lp/stage/situacoes-lab">Lab situações</Link>
+            {" · "}
+            <Link href="/prototype/bi-agent-lp/palettes">Paletas</Link>
+          </span>
+        </div>
+      ) : null}
 
       <header className="stg-nav">
-        <Link href="/prototype/bi-agent-lp/stage" className="stg-brand">
+        <Link href={homeHref} className="stg-brand">
           <Image src="/brand/logo-mark.svg" alt="" width={32} height={32} />
           <span>
             BI Agent
@@ -396,7 +401,8 @@ export function StagePrototype() {
       </section>
 
       <footer className="stg-footer">
-        <strong>BI Agent</strong> by DeepFlowRun · protótipo de palco
+        <strong>BI Agent</strong> by DeepFlowRun
+        {lab ? " · lab" : null}
       </footer>
     </div>
   );
