@@ -331,6 +331,8 @@ Veja a conversa no seu canal
 | **Funciona com planilha Excel?** | Sim, quando a planilha (ou modelo) é a fonte governada do dado. Avaliamos no diagnóstico. |
 | **Dá para revenda / whitelabel?** | Sim. Conversamos para você vender com a sua marca — nós entregamos produto, validação e onboarding. |
 | **Os dados passam por vocês?** | O agente consulta a fonte do cliente (cloud ou ambiente acordado). Detalhes de segurança alinhamos na demo. |
+| **Como cada cliente é isolado?** | No MVP, oferecemos uma instância dedicada por cliente, com credenciais, pack, dados e logs separados. O desenho de acesso à fonte e as permissões de cada usuário são validados no onboarding. |
+| **Como funciona o acesso quando o BI usa RLS?** | O contato precisa informar o e-mail corporativo no status/cadastro definido no onboarding. Sem esse e-mail, o acesso é bloqueado. Antes de liberar, verificamos a titularidade do e-mail e o vínculo do usuário com a política de RLS da fonte. |
 | **Qual a diferença para ChatGPT?** | ChatGPT não conhece o seu report. Nós consultamos **a sua** base, com recorte explícito e prova numérica. |
 | **Precisa treinar a equipe?** | A pergunta é em linguagem natural. Opcional: sessão curta para o time saber o que o agente cobre. |
 | **E depois do go-live?** | Suporte e evolução do pack conforme o report muda. Combinamos no contrato. |
