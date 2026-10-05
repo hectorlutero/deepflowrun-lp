@@ -251,6 +251,14 @@ export const FAQ_ITEMS: Array<{ q: string; a: string }> = [
     a: "O agente consulta a fonte do cliente (cloud ou ambiente acordado). Detalhes de segurança alinhamos na demo.",
   },
   {
+    q: "Como cada cliente é isolado?",
+    a: "No MVP, oferecemos uma instância dedicada por cliente, com credenciais, pack, dados e logs separados. O desenho de acesso à fonte e as permissões de cada usuário são validados no onboarding.",
+  },
+  {
+    q: "Como funciona o acesso quando o BI usa RLS?",
+    a: "O contato precisa informar o e-mail corporativo no status/cadastro definido no onboarding. Sem esse e-mail, o acesso é bloqueado. Antes de liberar, verificamos a titularidade do e-mail e o vínculo do usuário com a política de RLS da fonte.",
+  },
+  {
     q: "Qual a diferença para ChatGPT?",
     a: "ChatGPT não conhece o seu report. Nós consultamos a sua base, com recorte explícito e prova numérica.",
   },
